@@ -5,13 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css"> -->
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Mock Ecomm App</title>
 </head>
 
 <body>
+    <nav class="nav-bar-top black-text">
+        <div class="nav-hamburger" id="navHamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-item-left ">
+            <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md">
+            <div class="nav-item">
+                <h2 class="brand-title regular-text">
+                    <span class="violet-text">Q</span>RTR
+                </h2>
+            </div>
+        </div>
+
+        <div class="nav-item-center">
+            <div class="input-with-status-icon nav-search-bar">
+                <input type="text" class="input border-2" placeholder="Lorem Ipsum">
+                <i class="fa fa-search input-status violet-text"></i>
+            </div>
+        </div>
+
+        <div class="nav-item-right">
+            <button class="btn btn-transparent">
+                <i class="fa fa-sign-in medium-text violet-text"></i>
+            </button>
+            <div class="nav-item nav-cart">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-shopping-cart medium-text violet-text"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main class="landing-page">
+        <div class="page-width-80 flex-column-center width-100">
+            <section class="cta flex-column-center width-100">
+                <div class="cta-image flex-column-center">
+                    <div class="cta-text">
+                        <span class="cta-text-title xl-text">QRTR</span>
+                        <span class="cta-text-desc normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco</span>
+                    </div>
+                </div>
+            </section>
+            <section class="featured">
+                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+                    <img src="https://picsum.photos/400/300" class="card-image" alt="Tanjiro Kamado Pic" />
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="card-title-header">Item</div>
+                            <div class="card-title-author">Description</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-buttons">
+                            <button class="card-btn btn-link">BUY</button>
+                            <button class="card-btn btn-link btn-add-cart">Add to Cart</button>
+                        </div>
+                        <div class="card-footer-icons">
+                            <button class="btn btn-icon btn-transparent fa fa-heart-o ">
+                            </button>
+                            <button class="btn btn-icon btn-transparent fa fa-share-alt">
+                            </button>
+                            <button class=" btn btn-icon btn-transparent fa fa-ellipsis-v">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+                    <img src="https://picsum.photos/400/300" class="card-image" alt="Tanjiro Kamado Pic" />
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="card-title-header">Item</div>
+                            <div class="card-title-author">Description</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-buttons">
+                            <button class="card-btn btn-link">BUY</button>
+                            <button class="card-btn btn-link btn-add-cart">Add to Cart</button>
+                        </div>
+                        <div class="card-footer-icons">
+                            <button class="btn btn-icon btn-transparent fa fa-heart-o ">
+                            </button>
+                            <button class="btn btn-icon btn-transparent fa fa-share-alt ">
+                            </button>
+                            <button class=" btn btn-icon btn-transparent fa fa-ellipsis-v">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+                    <img src="https://picsum.photos/400/300" class="card-image" alt="Tanjiro Kamado Pic" />
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="card-title-header">Item</div>
+                            <div class="card-title-author">Description</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-buttons">
+                            <button class="card-btn btn-link">BUY</button>
+                            <button class="card-btn btn-link btn-add-cart">Add to Cart</button>
+                        </div>
+                        <div class="card-footer-icons">
+                            <button class="btn btn-icon btn-transparent fa fa-heart-o ">
+                            </button>
+                            <button class="btn btn-icon btn-transparent fa fa-share-alt ">
+                            </button>
+                            <button class=" btn btn-icon btn-transparent fa fa-ellipsis-v">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <script src="https://responsify-ui.vercel.app/index.js"></script>
+    <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
 
