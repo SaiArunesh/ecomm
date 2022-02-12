@@ -54,10 +54,12 @@
 .card-title-header {
   font-weight: 600;
   font-size: 2rem;
+  text-shadow: 0 0 10px #000;
 }
 
 .card-title-author {
   color: gray;
+  text-shadow: 0 0 10px #000;
 }
 
 .card-desc {

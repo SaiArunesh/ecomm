@@ -17,7 +17,7 @@
 
 .cta-image {
   background-image: url(../../assets/images/landing-page-banner-background-sm.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
   color: var(--lynxwhite-color);
@@ -56,4 +56,8 @@
   background-color: var(--info-color);
   color: var(--lynxwhite-color);
   padding: 1rem 2rem;
+}
+
+.featured > div {
+  cursor: pointer;
 }
