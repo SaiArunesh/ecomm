@@ -50,50 +50,37 @@
             </div>
         </div>
     </nav>
-    <main class="landing-page">
+    <main class="login-page">
         <div class="page-width-80 flex-column-center width-100">
-            <section class="cta flex-column-center width-100">
-                <div class="cta-image flex-column-center">
-                    <div class="cta-text">
-                        <span class="cta-text-title xl-text">QRTR</span>
-                        <span class="cta-text-desc normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco</span>
+            <div class="login-container">
+                <div class="card-login">
+                    <span class="login-title large-text">Login</span>
+
+                    <div class="login-username">
+                        <label for="username">Username
+                        </label> <input type="text" name="username" id="username">
+
                     </div>
-                </div>
-            </section>
-            <section class="featured">
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 1</div>
-                            <div class="card-title-author white-text">Description</div>
+                    <div class="login-password">
+                        <label for="password">Password
+                        </label>
+                        <input type="password" name="password" id="password">
+
+                    </div>
+                    <button class="btn btn-lg btn-info"><span class="medium-text"> Login</span>
+                    </button>
+                    <div class="login-sso">
+                        <span class="normal-text semibold-text">Or login using</span>
+                        <div class="login-sso-icons">
+                            <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
+                            <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
+                            <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 2</div>
-                            <div class="card-title-author white-text">Description</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 3</div>
-                            <div class="card-title-author white-text">Description</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
-    </main>                             
+    </main>
     <script src="https://responsify-ui.vercel.app/index.js"></script>
     <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>

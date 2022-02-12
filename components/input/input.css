@@ -1,6 +1,6 @@
 @import url("../globals.css");
 input {
-  border: 0;
+  border: 1px solid var(--info-color);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   max-width:65%;
