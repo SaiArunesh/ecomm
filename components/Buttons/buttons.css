@@ -88,8 +88,3 @@
 .card-btn:not(:first-child) {
   margin-left: 0.5rem;
 }
-
-.btn-add-cart{
-  text-decoration: none;
-}
-
