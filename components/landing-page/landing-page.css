@@ -17,7 +17,8 @@
 
 .cta-image {
   background-image: url(../../assets/images/landing-page-banner-background-sm.jpg);
-  background-size: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
   justify-content: center;
   color: var(--lynxwhite-color);
   font-family: "Fredoka One", cursive;
