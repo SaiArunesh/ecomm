@@ -53,8 +53,8 @@
 }
 
 .btn-link {
-  background-color: var(--info-color);
-  text-decoration: underline;
+  color:var(--black-color);
+  text-decoration: none;
   text-underline-offset: 0.2rem;
 }
 
