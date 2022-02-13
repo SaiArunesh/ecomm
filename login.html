@@ -55,58 +55,71 @@
         </div>
     </nav>
     <main class="login-page">
-        <div class="page-width-80 flex-column-center width-100">
-            <div class="login-container">
-                <div class="card-login">
-                    <span class="login-title large-text">Login</span>
-                    <div class="login-username">
-                        <label for="username">Username
-                        </label> <input type="text" placeholder="Enter your username" name="username" id="username">
-                    </div>
-                    <div class="login-password">
-                        <label for="password">Password
-                        </label>
-                        <input type="password" placeholder="Enter your password" name="password" id="password">
-                    </div>
-                    <button class="btn btn-lg btn-info"><span class="medium-text"> Login</span>
-                    </button>
-                    <div class="login-sso">
-                        <span class="normal-text semibold-text">Or login using</span>
-                        <div class="login-sso-icons">
-                            <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
-                            <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
-                            <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
-                        </div>
+        <div class="login-container">
+            <div class="card-login">
+                <span class="login-title large-text">Login</span>
+                <div class="login-username">
+                    <label for="username">Username
+                    </label> <input type="text" placeholder="Enter your username" name="username" id="username">
+                </div>
+                <div class="login-password">
+                    <label for="password">Password
+                    </label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                </div>
+                <div class="login-reminder">
+                    <label for="remember-me" class="normal-text"><input id="remember-me" type="checkbox">Remember
+                        me</label>
+                    <button class="btn btn-lg btn-transparent violet-text">Forgot Password?</button>
+                </div>
+                <button class="btn btn-lg btn-primary btn-wide"><span class="medium-text">Login</span>
+                </button>
+                <a class="btn btn-md btn-transparent btn-wide  create-account">
+                    <span class="normal-text violet-text">Create new account<b><i class="fa fa-arrow-right"></i></b>
+                </a>
+                <div class="login-sso">
+                    <span class="normal-text semibold-text violet-text">Or login using</span>
+                    <div class="login-sso-icons">
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
+                        <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="login-container">
-                <div class="card-login">
-                    <span class="login-title large-text">Sign up</span>
-                    <div class="login-username">
-                        <label for="username">Username
-                        </label> <input type="text" placeholder="12 Characters max" name="username" id="username">
-                    </div>
-                    <div class="login-password">
-                        <label for="password">Password
-                        </label>
-                        <input type="password" placeholder="12 Characters max" name="password" id="password">
-                    </div>
-                    <button class="btn btn-lg btn-info"><span class="medium-text">Sign Up</span>
-                    </button>
-                    <div class="login-sso">
-                        <span class="normal-text semibold-text">Or login using</span>
-                        <div class="login-sso-icons">
-                            <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
-                            <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
-                            <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
-                        </div>
+        </div>
+        <div class="login-container">
+            <div class="card-login">
+                <span class="login-title large-text">Sign up</span>
+                <div class="login-username">
+                    <label for="username">Username
+                    </label> <input type="text" placeholder="Enter your username" name="username" id="username">
+                </div>
+                <div class="login-password">
+                    <label for="password">Password
+                    </label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                </div>
+                <div class="login-reminder">
+                    <label for="accept-terms" class="normal-text "><input id="accept-terms" type="checkbox">I accept all
+                        Terms
+                        and Conditions</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-wide"><span class="medium-text">Sign up</span>
+                </button>
+                <a class="btn btn-md btn-transparent btn-wide  create-account" href="./login.html">
+                    <span class="normal-text violet-text">Already have an account<b><i class="fa fa-arrow-right"></i></b>
+                </a>
+                <div class="login-sso">
+                    <span class="normal-text semibold-text violet-text">Or login using</span>
+                    <div class="login-sso-icons">
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
+                        <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="https://responsify-ui.vercel.app/index.js"></script>
     <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>

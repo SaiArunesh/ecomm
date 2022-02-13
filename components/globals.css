@@ -18,8 +18,7 @@
 }
 
 .info-text {
-  background-color: var(--info-color);
-  color: white;
+  color: var(--info-color);
 }
 
 .warning-text {
