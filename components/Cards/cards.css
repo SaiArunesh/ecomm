@@ -156,14 +156,6 @@
 }
 
 /* Login Card */
-.login-container {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card-login,
 .login-sso,
 .login-sso-icons,
@@ -172,48 +164,18 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .card-login {
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 3rem;
+  gap: 0.5rem;
   border: 5px solid var(--lynxwhite-color);
   border-radius: 0.5rem;
-  width: 500px;
+  min-width: 50%;
   max-width: 80rem;
   max-height: 80rem;
   height: 500px;
-  padding: 2rem;
   font-size: 2rem;
-}
-
-.login-title {
-  font-family: "Fredoka One", cursive;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  color: var(--violet-color);
-}
-
-.login-username,
-.login-password {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.login-username > input {
-  flex: 1 1 auto;
-}
-
-.login-password > input {
-  flex: 1 1 auto;
-}
-
-.login-sso {
-  flex-direction: column;
-}
-
-.login-sso-icons {
-  font-size: 3rem;
 }

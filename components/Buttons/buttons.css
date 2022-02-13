@@ -12,6 +12,10 @@
   background-color: var(--info-color);
 }
 
+.btn-primary {
+  background-color: var(--violet-color);
+}
+
 .btn-success {
   background-color: var(--success-color);
 }
@@ -87,4 +91,8 @@
 
 .card-btn:not(:first-child) {
   margin-left: 0.5rem;
+}
+
+.btn-wide{
+  width: 80%;
 }
