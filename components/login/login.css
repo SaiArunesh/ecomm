@@ -22,6 +22,16 @@
   color: var(--violet-color);
 }
 
+.login-sso,
+.login-sso-icons,
+.login-username,
+.login-password {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .login-username,
 .login-password {
   width: 90%;

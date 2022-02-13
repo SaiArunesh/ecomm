@@ -5,35 +5,25 @@
   flex-direction: column;
   background-color: white;
   border-radius: 0.5rem;
-  max-width: 35rem;
+  width: 35rem;
   height: fit-content;
   margin: 2rem;
   position: relative;
   z-index: 0;
-}
-
-.card-ribbon::before {
-  position: absolute;
-  content: "";
-  background: var(--info-color);
-  height: 28px;
-  width: 28px;
-  top: 1.5rem;
-  right: -0.4rem;
-  transform: rotate(45deg);
-  z-index: -999999;
+  flex-wrap: wrap;
 }
 
 .card-ribbon::after {
   position: absolute;
   content: attr(badge-text);
   top: 1rem;
-  right: -0.9rem;
+  right: 1rem;
   padding: 0.5rem;
   width: 10rem;
   background: var(--info-color);
   color: var(--lynxwhite-color);
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .card-image {
@@ -54,12 +44,14 @@
 .card-title-header {
   font-weight: 600;
   font-size: 2rem;
-  text-shadow: 0 0 10px #000;
 }
 
 .card-title-author {
   color: gray;
-  text-shadow: 0 0 10px #000;
+}
+
+.card-dark-bg {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .card-desc {
@@ -156,18 +148,11 @@
 }
 
 /* Login Card */
-.card-login,
-.login-sso,
-.login-sso-icons,
-.login-username,
-.login-password {
+.card-login {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.card-login {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0.5rem;
@@ -177,5 +162,58 @@
   max-width: 80rem;
   max-height: 80rem;
   height: 500px;
+  font-size: 2rem;
+}
+
+/* Product Card*/
+.card-product > .card-image {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  height: 30rem;
+}
+
+.card-product-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 2rem;
+  row-gap: 1rem;
+}
+
+.card-product-name {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.card-product-desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.card-price-slashed {
+  text-decoration: line-through;
+  font-size: 2rem;
+}
+
+.card-ribbon-warning::after {
+  background: var(--warning-color);
+  color: var(--lynxwhite-color);
+  font-weight: 600;
+}
+
+.card-product-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+.card-rating{
+  margin-left: auto;
   font-size: 2rem;
 }

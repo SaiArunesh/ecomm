@@ -57,7 +57,7 @@
 }
 
 .btn-link {
-  color:var(--black-color);
+  color: var(--black-color);
   text-decoration: none;
   text-underline-offset: 0.2rem;
 }
@@ -93,6 +93,29 @@
   margin-left: 0.5rem;
 }
 
-.btn-wide{
+.btn-wide {
   width: 80%;
+}
+
+.btn-add-cart {
+  text-decoration: none;
+}
+
+.btn-buy {
+  background-color: var(--info-color);
+  color: var(--lynxwhite-color);
+  padding: 1rem 0;
+  flex: 1 1 10rem;
+  border-radius: initial;
+  font-size: 1.2rem;
+}
+
+.btn-wish {
+  background-color: var(--warning-color);
+  color: var(--lynxwhite-color);
+  flex: 1 1 10rem;
+  padding: 1ren 0;
+  border-radius: initial;
+  font-size: 1.2rem;
+
 }

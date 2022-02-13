@@ -48,16 +48,6 @@
   justify-content: center;
 }
 
-.btn-add-cart {
-  text-decoration: none;
-}
-
-.btn-buy {
-  background-color: var(--info-color);
-  color: var(--lynxwhite-color);
-  padding: 1rem 2rem;
-}
-
 .featured > div {
   cursor: pointer;
 }
