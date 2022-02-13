@@ -60,7 +60,7 @@
   padding-left: 10px;
 }
 
-label,
-a {
+.login-page label,
+.login-page a {
   color: var(--violet-color);
 }
