@@ -4,7 +4,7 @@ const toggleSideNavBar = () => {
       mainSec.style.visibility = "visible";
     }
     else {
-      sideNav.style.display = "flex";
+      sideNav.style.display = "block";
       mainSec.style.visibility = "hidden";
     }
   }
@@ -16,7 +16,7 @@ const toggleSideNavBar = () => {
   window.addEventListener("resize", resetSideNav);
   
   const navHamburger = document.getElementById("navHamburger");
-  const sideNav = document.getElementById("sideNav");
-  const mainSec = document.querySelector(".main-section");
+  const sideNav = document.querySelector(".filter-listing-container");
+  const mainSec = document.querySelector(".product-listing-container");
   navHamburger.addEventListener("click", toggleSideNavBar)
   sideNav.addEventListener("click", resetSideNav);
