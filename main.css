@@ -13,6 +13,7 @@
 @import url(./components/rating/rating.css);
 @import url(./components/landing-page/landing-page.css);
 @import url(./components/login/login.css);
+@import url(./components/product-page/product-page.css);
 
 html {
   font-size: 62.5%; /* 16px is assumed */

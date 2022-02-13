@@ -18,8 +18,8 @@
   background: var(--info-color);
   height: 28px;
   width: 28px;
-  top: 2rem;
-  right: -0.5rem;
+  top: 1.5rem;
+  right: -0.4rem;
   transform: rotate(45deg);
   z-index: -999999;
 }

@@ -57,3 +57,15 @@ input:focus {
   max-width: inherit;
   width: 100%;
 }
+
+.slider{
+  padding: initial;
+  border-radius: initial;
+  max-width:initial;
+  background: #d3d3d3;
+}
+
+.slider-caption{
+  display: flex;
+  justify-content: space-between;
+}
