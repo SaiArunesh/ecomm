@@ -113,6 +113,9 @@ html {
   html {
     font-size: 55%;
   }
+  .page-side-nav{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -122,6 +125,9 @@ html {
   }
   .side-nav {
     display: flex;
+  }
+  .page-side-nav{
+    display: none;
   }
 }
 

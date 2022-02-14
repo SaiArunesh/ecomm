@@ -166,9 +166,30 @@
 }
 
 /* Product Card*/
-.card-product > .card-image {
+.card-product-image {
+  position: relative;
+}
+
+.card-product-image > .card-image {
   border-radius: 0.5rem 0.5rem 0rem 0rem;
   height: 30rem;
+  width: 100%;
+}
+
+.card-heart {
+  position: absolute;
+  content: "";
+  bottom: 1rem;
+  right: 1rem;
+  font-size:2rem;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.card-heart:hover{
+  opacity: 0.8;
 }
 
 .card-product-content {
