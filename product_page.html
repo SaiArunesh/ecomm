@@ -1,519 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css"> -->
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mock Ecomm App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="nav-bar-top black-text">
-        <div class="nav-hamburger" id="navHamburger">
-            <i class="fa fa-bars"></i>
+      <div class="nav-hamburger" id="navHamburger">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="nav-item-left">
+        <img
+          src="assets/images/logo.png"
+          alt="brand-logo"
+          class="nav-item nav-brand-logo round-corner-md"
+        />
+        <div class="nav-item">
+          <h2 class="brand-title regular-text">
+            <a href="./index.html"> <span class="violet-text">Q</span>RTR </a>
+          </h2>
         </div>
-        <div class="nav-item-left ">
-            <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md">
-            <div class="nav-item">
-                <h2 class="brand-title regular-text">
-                    <a href="./index.html">
-                        <span class="violet-text">Q</span>RTR
-                    </a>
-                </h2>
-            </div>
-        </div>
+      </div>
 
-        <div class="nav-item-center">
-            <div class="input-with-status-icon nav-search-bar">
-                <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page">
-                <a href="./product_page.html">
-                    <i class="fa fa-search input-status violet-text"></i>
-                </a>
-            </div>
+      <div class="nav-item-center">
+        <div class="input-with-status-icon nav-search-bar">
+          <input
+            type="text"
+            class="input border-2"
+            placeholder="Search to go to Product Listing Page"
+          />
+          <a href="./product_page.html">
+            <i class="fa fa-search input-status violet-text"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="nav-item-right">
-            <button class="btn btn-transparent">
-                <i class="fa fa-sign-in medium-text violet-text"></i>
-                <a href="../login.html" class="btn btn-link">
-                    <span class="medium-text">Log-<span class="violet-text">in</span></span>
-                </a>
-            </button>
-            <div class="nav-item nav-cart">
-                <button class="btn btn-transparent">
-                    <i class="fa fa-shopping-cart medium-text violet-text"></i>
-                </button>
-            </div>
+      <div class="nav-item-right">
+        <button class="btn btn-transparent">
+          <i class="fa fa-sign-in medium-text violet-text"></i>
+          <a href="../login.html" class="btn btn-link">
+            <span class="medium-text"
+              >Log-<span class="violet-text">in</span></span
+            >
+          </a>
+        </button>
+        <div class="nav-item nav-cart">
+          <button class="btn btn-transparent">
+            <i class="fa fa-shopping-cart medium-text violet-text"></i>
+          </button>
         </div>
+      </div>
     </nav>
     <main class="product-page width-100">
-        <section class="filter-listing-container">
-            <div class="filter-header">
-                <span class="filter-title medium-text">Filter</span>
-                <button class="btn btn-md btn-transparent">Clear</button>
+      <section class="filter-listing-container">
+        <div class="filter-header">
+          <span class="filter-title medium-text">Filter</span>
+          <button class="btn btn-md btn-transparent">Clear</button>
+        </div>
+        <div class="filter-content-container">
+          <div class="filter-container">
+            <span class="filter-title medium-text">Price Range</span>
+            <input class="slider" type="range" min="1" max="3" value="1" />
+            <div class="slider-caption">
+              <p>100</p>
+              <p>200</p>
+              <p>300</p>
             </div>
-            <div class="filter-content-container">
-                <div class="filter-container">
-                    <span class="filter-title medium-text">Price Range</span>
-                    <input class="slider" type="range" min="1" max="3" value="1">
-                    <div class="slider-caption">
-                        <p>100</p>
-                        <p>200</p>
-                        <p>300</p>
-                    </div>
-                </div>
-                <div class="filter-container">
-                    <span class="filter-title medium-text">Sort</span>
-                    <label class="normal-text" for="sort-price-low">
-                        <input type="radio" id="sort-price-low" name="sort-price">
-                        Prices Low to High
-                    </label>
-                    <label class="normal-text" for="sort-price-high">
-                        <input type="radio" id="sort-price-high" name="sort-price">
-                        Prices High to Low
-                    </label>
-                </div>
-                <div class="filter-container">
-                    <span class="filter-title medium-text">Category</span>
-                    <label class="normal-text" for="category-one"> <input type="checkbox" id="category-one"
-                            name="category">
-                        Lorem
-                    </label>
-                    <label class="normal-text" for="category-two"> <input type="checkbox" id="category-two"
-                            name="category">
-                        Ipsum
-                    </label>
-                    <label class="normal-text" for="category-three"> <input type="checkbox" id="category-three"
-                            name="category">
-                        Lorem Ipsum
-                    </label>
-                </div>
-                <div class="filter-container">
-                    <span class="filter-title medium-text">Ratings</span>
-                    <label class="normal-text" for="four-above"> <input type="radio" id="four-above" name="category">
-                        4 and above
-                    </label>
-                    <label class="normal-text" for="three-above"> <input type="radio" id="three-above" name="category">
-                        3 and above
-                    </label>
-                    <label class="normal-text" for="two-above"> <input type="radio" id="two-above" name="category">
-                        2 and above
-                    </label>
-                    <label class="normal-text" for="one-above"> <input type="radio" id="one-above" name="category">
-                        1 and above
-                    </label>
-                </div>
+          </div>
+          <div class="filter-container">
+            <span class="filter-title medium-text">Sort</span>
+            <label class="normal-text" for="sort-price-low">
+              <input type="radio" id="sort-price-low" name="sort-price" />
+              Prices Low to High
+            </label>
+            <label class="normal-text" for="sort-price-high">
+              <input type="radio" id="sort-price-high" name="sort-price" />
+              Prices High to Low
+            </label>
+          </div>
+          <div class="filter-container">
+            <span class="filter-title medium-text">Category</span>
+            <label class="normal-text" for="category-one">
+              <input type="checkbox" id="category-one" name="category" />
+              Lorem
+            </label>
+            <label class="normal-text" for="category-two">
+              <input type="checkbox" id="category-two" name="category" />
+              Ipsum
+            </label>
+            <label class="normal-text" for="category-three">
+              <input type="checkbox" id="category-three" name="category" />
+              Lorem Ipsum
+            </label>
+          </div>
+          <div class="filter-container">
+            <span class="filter-title medium-text">Ratings</span>
+            <label class="normal-text" for="four-above">
+              <input type="radio" id="four-above" name="category" />
+              4 and above
+            </label>
+            <label class="normal-text" for="three-above">
+              <input type="radio" id="three-above" name="category" />
+              3 and above
+            </label>
+            <label class="normal-text" for="two-above">
+              <input type="radio" id="two-above" name="category" />
+              2 and above
+            </label>
+            <label class="normal-text" for="one-above">
+              <input type="radio" id="one-above" name="category" />
+              1 and above
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="product-listing-container">
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-        </section>
-        <section class="product-listing-container">
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+        <div
+          class="card-basic card-ribbon card-ribbon-warning card-product border-2"
+          badge-text="Only 2 left"
+        >
+          <img
+            src="https://picsum.photos/300/300"
+            class="card-image"
+            alt="card-image"
+          />
+          <div class="card-product-content">
+            <div class="card-product-name">Item name</div>
+            <div class="card-product-desc gray-text">with Goodies</div>
+            <div class="card-price large-text">
+              $100
+              <span class="card-price-slashed gray-text">$150</span>
+              <span class="card-rating"
+                >4 <i class="fa fa-star star-green"></i
+              ></span>
             </div>
-            <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
-                <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
-                <div class="card-product-content">
-                    <div class="card-product-name">Item name</div>
-                    <div class="card-product-desc gray-text">with Goodies</div>
-                    <div class="card-price large-text">
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                        <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
-                    </div>
-                </div>
-                <div class="card-product-icons">
-                    <button class="btn btn-icon btn-transparent btn-buy">
-                        <i class="fa fa-shopping-cart"></i>
-                        Buy now
-                    </button>
-                    <button class="btn btn-icon btn-transparent btn-wish">
-                        <i class=" fa fa-plus"></i>
-                        Add to Wish List
-                    </button>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="card-product-icons">
+            <button class="btn btn-icon btn-transparent btn-buy">
+              <i class="fa fa-shopping-cart"></i>
+              Buy now
+            </button>
+            <button class="btn btn-icon btn-transparent btn-wish">
+              <i class="fa fa-plus"></i>
+              Add to Wish List
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/829cb68a23.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>

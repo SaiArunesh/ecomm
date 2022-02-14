@@ -2,7 +2,8 @@
   font-family: "Fredoka One", cursive;
 }
 
-.landing-page, .login-page {
+.landing-page,
+.login-page {
   width: 100%;
   display: flex;
   align-items: center;

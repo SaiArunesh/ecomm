@@ -210,10 +210,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap:1rem;
+  gap: 1rem;
 }
 
-.card-rating{
+.card-rating {
   margin-left: auto;
   font-size: 2rem;
 }
