@@ -16,7 +16,7 @@ const resetSideNav = () => {
 window.addEventListener("resize", resetSideNav);
 
 const navHamburger = document.getElementById("navHamburger");
-const sideNav = document.querySelector(".filter-listing-container");
-const mainSec = document.querySelector(".product-listing-container");
+const sideNav = document.querySelector(".side-nav");
+const mainSec = document.querySelector(".main-section");
 navHamburger.addEventListener("click", toggleSideNavBar)
 sideNav.addEventListener("click", resetSideNav);
