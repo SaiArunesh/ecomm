@@ -1,6 +1,6 @@
 const toggleSideNavBar = () => {
   if (sideNav.style.display === "none" || sideNav.style.display === "") {
-    sideNav.style.display = "block";
+    sideNav.style.display = "flex";
     mainSec.style.visibility = "hidden";
   }
   else {
@@ -19,4 +19,3 @@ const navHamburger = document.getElementById("navHamburger");
 const sideNav = document.querySelector(".side-nav");
 const mainSec = document.querySelector(".main-section");
 navHamburger.addEventListener("click", toggleSideNavBar)
-sideNav.addEventListener("click", resetSideNav);
