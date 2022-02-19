@@ -315,3 +315,11 @@
 .cart-price-amount{
   justify-self: end;
 }
+
+.card-price-total{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}

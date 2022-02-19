@@ -39,17 +39,26 @@
         </div>
 
         <div class="nav-item-right">
-            <button class="btn btn-transparent">
-                <i class="fa fa-sign-in medium-text violet-text"></i>
-                <a href="../login.html" class="btn btn-link">
+            <a href="../login.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-sign-in medium-text violet-text"></i>
                     <span class="medium-text">Log-<span class="violet-text">in</span></span>
-                </a>
-            </button>
-            <div class="nav-item nav-cart">
+                </button>
+            </a>
+
+            <a href="../cart.html" class="btn btn-link">
                 <button class="btn btn-transparent">
                     <i class="fa fa-shopping-cart medium-text violet-text"></i>
+                    <span class="medium-text">Cart</span>
                 </button>
-            </div>
+            </a>
+
+            <a href="../wishlist.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-heart medium-text violet-text"></i>
+                    <span class="medium-text">Wishlist</span>
+                </button>
+            </a>
         </div>
     </nav>
     <aside class="side-nav page-side-nav">
@@ -65,11 +74,29 @@
                 <span class="medium-text">Log-<span class="violet-text">in</span></span>
             </a>
         </button>
-        <div class="nav-item nav-cart">
-            <button class="btn btn-transparent">
+        <button class="btn btn-transparent">
+            <i class="fa fa-heart medium-text violet-text"></i>
+            <a href="../wishlist.html" class="btn btn-link">
+                <span class="medium-text">Wishlist</span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <a href="../cart.html" class="btn btn-link">
                 <i class="fa fa-shopping-cart medium-text violet-text"> </i>
                 <span class="medium-text">Go to <span class="violet-text">Cart</span></span>
-            </button>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-home medium-text violet-text"></i>
+            <a href="./index.html" class="btn btn-link">
+                <span class="medium-text">Home</span>
+            </a>
+        </button><button class="btn btn-transparent">
+            <i class="fa fa-list medium-text violet-text"></i>
+            <a href="./product_page.html" class="btn btn-link">
+                <span class="medium-text">Product Page</span>
+            </a>
+        </button>
     </aside>
     <main class="main-section cart-page">
         <div class="cart-items">
@@ -191,7 +218,7 @@
             </div>
         </div>
         <div class="cart-checkout">
-            <div class="card-price border-2">
+            <div class="card-price-total border-2">
                 <div class="card-header">
                     <div class="card-title">
                         <div class="card-title-header">Price Details</div>
