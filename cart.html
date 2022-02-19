@@ -92,6 +92,35 @@
                     </div>
                     <div class="cart-quantity">
                         <button class="btn btn-lg btn-transparent cart-button">
+                            <span class="violet-text medium-text">-</span>
+                        </button>
+                        <span class="medium-text">1</span>
+                        <button class="btn btn-lg btn-transparent cart-button">
+                            <span class="violet-text medium-text">+</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-icon btn-transparent card-dismiss fa fa-close"></button>
+            </div>
+            <div class="card-cart border-2">
+                <div class="left">
+                    <div class="cart-product-image">
+                        <img src="https://picsum.photos/200/200" alt="" class="cart-image">
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                </div>
+                <div class="cart-product-content">
+                    <div class="cart-product-name">Item name</div>
+                    <div class="cart-product-desc gray-text">with Goodies</div>
+                    <div class="cart-price">
+                        <div class="cart-offer">
+                            <p class="info-text">Pay using UPI for 5% discount</p>
+                        </div>
+                        $100
+                        <span class="card-price-slashed gray-text">$150</span>
+                    </div>
+                    <div class="cart-quantity">
+                        <button class="btn btn-lg btn-transparent cart-button">
                             <span class="violet-text large-text">-</span>
                         </button>
                         <span class="large-text">1</span>
@@ -130,35 +159,8 @@
                     </div>
                 </div>
                 <button class="btn btn-icon btn-transparent card-dismiss fa fa-close"></button>
-            </div><div class="card-cart border-2">
-                <div class="left">
-                    <div class="cart-product-image">
-                        <img src="https://picsum.photos/200/200" alt="" class="cart-image">
-                        <i class="fa fa-heart-o card-heart"></i>
-                    </div>
-                </div>
-                <div class="cart-product-content">
-                    <div class="cart-product-name">Item name</div>
-                    <div class="cart-product-desc gray-text">with Goodies</div>
-                    <div class="cart-price">
-                        <div class="cart-offer">
-                            <p class="info-text">Pay using UPI for 5% discount</p>
-                        </div>
-                        $100
-                        <span class="card-price-slashed gray-text">$150</span>
-                    </div>
-                    <div class="cart-quantity">
-                        <button class="btn btn-lg btn-transparent cart-button">
-                            <span class="violet-text large-text">-</span>
-                        </button>
-                        <span class="large-text">1</span>
-                        <button class="btn btn-lg btn-transparent cart-button">
-                            <span class="violet-text large-text">+</span>
-                        </button>
-                    </div>
-                </div>
-                <button class="btn btn-icon btn-transparent card-dismiss fa fa-close"></button>
-            </div><div class="card-cart border-2">
+            </div>
+            <div class="card-cart border-2">
                 <div class="left">
                     <div class="cart-product-image">
                         <img src="https://picsum.photos/200/200" alt="" class="cart-image">
@@ -189,8 +191,31 @@
             </div>
         </div>
         <div class="cart-checkout">
-            <button class="btn btn-lg btn-warning large-text">Checkout</button>
-            <button class="btn btn-lg btn-info large-text">Add Cart contents to Wishlist</button>
+            <div class="card-price border-2">
+                <div class="card-header">
+                    <div class="card-title">
+                        <div class="card-title-header">Price Details</div>
+                    </div>
+                </div>
+                <div class="card-desc cart-price-breakdown">
+                    <div class="cart-price-text">
+                        <p>Price</p>
+                        <p>Discount</p>
+                        <p>Delivery Charges</p>
+                        <p class="bold-text">Total amount</p>
+                    </div>
+                    <div class="cart-price-amount">
+                        <p>100</p>
+                        <p>-50</p>
+                        <p>20</p>
+                        <p class="bold-text">70</p>
+                    </div>
+                </div>
+
+                <button class="btn btn-lg btn-warning large-text">Checkout</button>
+                <button class="btn btn-lg btn-info large-text">Add Cart contents to Wishlist</button>
+            </div>
+
         </div>
 
     </main>

@@ -20,7 +20,8 @@
   gap: 2rem;
   margin-top: 3rem;
   width: 100%;
-  justify-self: start;
+  justify-self: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
