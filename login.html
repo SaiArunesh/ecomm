@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mock Ecomm App</title>
+</head>
+
+<body>
+    <nav class="nav-bar-top black-text">
+        <div class="nav-hamburger" id="navHamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-item-left ">
+            <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md">
+            <div class="nav-item">
+                <h2 class="brand-title regular-text">
+                    <a href="./index.html">
+                        <span class="violet-text">Q</span>RTR
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="nav-item-center">
+            <div class="input-with-status-icon nav-search-bar">
+                <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page">
+                <a href="./product_page.html">
+                    <i class="fa fa-search input-status violet-text"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item-right">
+            <a href="../login.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-sign-in medium-text violet-text"></i>
+                    <span class="medium-text">Log-<span class="violet-text">in</span></span>
+                </button>
+            </a>
+
+            <a href="../cart.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-shopping-cart medium-text violet-text"></i>
+                    <span class="medium-text">Cart</span>
+                </button>
+            </a>
+
+            <a href="../wishlist.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-heart medium-text violet-text"></i>
+                    <span class="medium-text">Wishlist</span>
+                </button>
+            </a>
+        </div>
+    </nav>
+    <aside class="side-nav page-side-nav">
+        <div class="input-with-status-icon nav-search-bar">
+            <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page" />
+            <a href="./product_page.html">
+                <i class="fa fa-search input-status violet-text"></i>
+            </a>
+        </div>
+        <button class="btn btn-transparent">
+            <i class="fa fa-sign-in medium-text violet-text"></i>
+            <a href="../login.html" class="btn btn-link">
+                <span class="medium-text">Log-<span class="violet-text">in</span></span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-heart medium-text violet-text"></i>
+            <a href="../wishlist.html" class="btn btn-link">
+                <span class="medium-text">Wishlist</span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <a href="../cart.html" class="btn btn-link">
+                <i class="fa fa-shopping-cart medium-text violet-text"> </i>
+                <span class="medium-text">Go to <span class="violet-text">Cart</span></span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-home medium-text violet-text"></i>
+            <a href="./index.html" class="btn btn-link">
+                <span class="medium-text">Home</span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-list medium-text violet-text"></i>
+            <a href="./product_page.html" class="btn btn-link">
+                <span class="medium-text">Product Page</span>
+            </a>
+        </button>
+    </aside>
+    <main class="login-page">
+        <div class="login-container">
+            <div class="card-login">
+                <span class="login-title large-text">Login</span>
+                <div class="login-username">
+                    <label for="username">Username
+                    </label> <input type="text" placeholder="Enter your username" name="username" id="username">
+                </div>
+                <div class="login-password">
+                    <label for="password">Password
+                    </label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                </div>
+                <div class="login-reminder">
+                    <label for="remember-me" class="normal-text"><input id="remember-me" type="checkbox">Remember
+                        me</label>
+                    <button class="btn btn-lg btn-transparent violet-text">Forgot Password?</button>
+                </div>
+                <button class="btn btn-lg btn-primary btn-wide"><span class="medium-text">Login</span>
+                </button>
+                <a class="btn btn-md btn-transparent btn-wide  create-account">
+                    <span class="normal-text violet-text">Create new account<b><i class="fa fa-arrow-right"></i></b>
+                </a>
+                <div class="login-sso">
+                    <span class="normal-text semibold-text violet-text">Or login using</span>
+                    <div class="login-sso-icons">
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
+                        <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="card-login">
+                <span class="login-title large-text">Sign up</span>
+                <div class="login-username">
+                    <label for="username">Username
+                    </label> <input type="text" placeholder="Enter your username" name="username" id="username">
+                </div>
+                <div class="login-password">
+                    <label for="password">Password
+                    </label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                </div>
+                <div class="login-reminder">
+                    <label for="accept-terms" class="normal-text "><input id="accept-terms" type="checkbox">I accept all
+                        Terms
+                        and Conditions</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-wide"><span class="medium-text">Sign up</span>
+                </button>
+                <a class="btn btn-md btn-transparent btn-wide  create-account" href="./login.html">
+                    <span class="normal-text violet-text">Already have an account<b><i
+                                class="fa fa-arrow-right"></i></b>
+                </a>
+                <div class="login-sso">
+                    <span class="normal-text semibold-text violet-text">Or login using</span>
+                    <div class="login-sso-icons">
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-google"></i></button>
+                        <button class="btn btn-lg  btn-link"> <i class="fa fa-github"></i></button>
+                        <button class="btn btn-lg btn-link"> <i class="fa fa-apple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

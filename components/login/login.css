@@ -1,0 +1,77 @@
+.login-page {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.login-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: var(--violet-color);
+}
+
+.login-sso,
+.login-sso-icons,
+.login-username,
+.login-password {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.login-username,
+.login-password {
+  width: 90%;
+  justify-content: center;
+}
+
+.login-username > input {
+  flex: 1 1 auto;
+}
+
+.login-password > input {
+  flex: 1 1 auto;
+}
+
+.login-sso {
+  flex-direction: column;
+}
+
+.login-sso-icons {
+  font-size: 3rem;
+}
+
+.login-reminder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.create-account {
+  text-align: center;
+  padding-left: 10px;
+  justify-self: center;
+  width: fit-content;
+}
+
+.login-page label,
+.login-page a {
+  display: flex;
+  align-items: center;
+  color: var(--violet-color);
+}

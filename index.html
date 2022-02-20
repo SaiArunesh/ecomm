@@ -2,98 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css"> -->
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Mock Ecomm App</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css">
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Mock Ecomm App</title>
 </head>
 
 <body>
-    <nav class="nav-bar-top black-text">
-        <div class="nav-hamburger" id="navHamburger">
-            <i class="fa fa-bars"></i>
-        </div>
-        <div class="nav-item-left ">
-            <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md">
-            <div class="nav-item">
-                <h2 class="brand-title regular-text">
-                    <span class="violet-text">Q</span>RTR
-                </h2>
-            </div>
-        </div>
+  <nav class="nav-bar-top black-text">
+    <div class="nav-hamburger" id="navHamburger">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="nav-item-left">
+      <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md" />
+      <div class="nav-item">
+        <h2 class="brand-title regular-text">
+          <a href="./index.html"> <span class="violet-text">Q</span>RTR </a>
+        </h2>
+      </div>
+    </div>
 
-        <div class="nav-item-center">
-            <div class="input-with-status-icon nav-search-bar">
-                <input type="text" class="input border-2" placeholder="Lorem Ipsum">
-                <i class="fa fa-search input-status violet-text"></i>
-            </div>
-        </div>
+    <div class="nav-item-center">
+      <div class="input-with-status-icon nav-search-bar">
+        <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page" />
+        <a href="./product_page.html">
+          <i class="fa fa-search input-status violet-text"></i>
+        </a>
+      </div>
+    </div>
 
-        <div class="nav-item-right">
-            <button class="btn btn-transparent">
-                <i class="fa fa-sign-in medium-text violet-text"></i>
-            </button>
-            <div class="nav-item nav-cart">
-                <button class="btn btn-transparent">
-                    <i class="fa fa-shopping-cart medium-text violet-text"></i>
-                </button>
+    <div class="nav-item-right">
+      <a href="../login.html" class="btn btn-link">
+        <button class="btn btn-transparent">
+          <i class="fa fa-sign-in medium-text violet-text"></i>
+          <span class="medium-text">Log-<span class="violet-text">in</span></span>
+        </button>
+      </a>
+
+      <a href="../cart.html" class="btn btn-link">
+        <button class="btn btn-transparent">
+          <i class="fa fa-shopping-cart medium-text violet-text"></i>
+          <span class="medium-text">Cart</span>
+        </button>
+      </a>
+
+      <a href="../wishlist.html" class="btn btn-link">
+        <button class="btn btn-transparent">
+          <i class="fa fa-heart medium-text violet-text"></i>
+          <span class="medium-text">Wishlist</span>
+        </button>
+      </a>
+    </div>
+  </nav>
+  <aside class="side-nav page-side-nav">
+    <div class="input-with-status-icon nav-search-bar">
+      <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page" />
+      <a href="./product_page.html">
+        <i class="fa fa-search input-status violet-text"></i>
+      </a>
+    </div>
+    <button class="btn btn-transparent">
+      <i class="fa fa-sign-in medium-text violet-text"></i>
+      <a href="../login.html" class="btn btn-link">
+        <span class="medium-text">Log-<span class="violet-text">in</span></span>
+      </a>
+    </button>
+    <button class="btn btn-transparent">
+      <i class="fa fa-heart medium-text violet-text"></i>
+      <a href="../wishlist.html" class="btn btn-link">
+        <span class="medium-text">Wishlist</span>
+      </a>
+    </button>
+    <button class="btn btn-transparent">
+      <a href="../cart.html" class="btn btn-link">
+        <i class="fa fa-shopping-cart medium-text violet-text"> </i>
+        <span class="medium-text">Go to <span class="violet-text">Cart</span></span>
+      </a>
+    </button>
+    <button class="btn btn-transparent">
+      <i class="fa fa-home medium-text violet-text"></i>
+      <a href="./index.html" class="btn btn-link">
+        <span class="medium-text">Home</span>
+      </a>
+    </button>
+    <button class="btn btn-transparent">
+      <i class="fa fa-list medium-text violet-text"></i>
+      <a href="./product_page.html" class="btn btn-link">
+        <span class="medium-text">Product Page</span>
+      </a>
+    </button>
+  </aside>
+  <main class="main-section landing-page">
+    <div class="page-width-80 flex-column-center width-100">
+      <section class="cta flex-column-center width-100">
+        <div class="cta-image flex-column-center">
+          <div class="cta-text">
+            <span class="cta-text-title xl-text">QRTR</span>
+            <span class="cta-text-desc normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco</span>
+          </div>
+        </div>
+      </section>
+      <section class="featured">
+        <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+          <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
+          <div class="card-header card-pull-text-over-media">
+            <div class="card-title card-dark-bg">
+              <div class="card-title-header white-text">Featured Item 1</div>
+              <div class="card-title-desc white-text">Description</div>
             </div>
+          </div>
         </div>
-    </nav>
-    <main class="landing-page">
-        <div class="page-width-80 flex-column-center width-100">
-            <section class="cta flex-column-center width-100">
-                <div class="cta-image flex-column-center">
-                    <div class="cta-text">
-                        <span class="cta-text-title xl-text">QRTR</span>
-                        <span class="cta-text-desc normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco</span>
-                    </div>
-                </div>
-            </section>
-            <section class="featured">
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 1</div>
-                            <div class="card-title-author white-text">Description</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 2</div>
-                            <div class="card-title-author white-text">Description</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-basic card-ribbon border-2" badge-text="On Sale">
-                    <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
-                    <div class="card-header card-pull-text-over-media">
-                        <div class="card-title">
-                            <div class="card-title-header white-text">Featured Item 3</div>
-                            <div class="card-title-author white-text">Description</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+          <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
+          <div class="card-header card-pull-text-over-media">
+            <div class="card-title card-dark-bg">
+              <div class="card-title-header white-text">Featured Item 2</div>
+              <div class="card-title-desc white-text">Description</div>
+            </div>
+          </div>
         </div>
-    </main>
-    <script src="https://responsify-ui.vercel.app/index.js"></script>
-    <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+        <div class="card-basic card-ribbon border-2" badge-text="On Sale">
+          <img src="https://picsum.photos/400/300" class="card-image" alt="card-image" />
+          <div class="card-header card-pull-text-over-media">
+            <div class="card-title card-dark-bg">
+              <div class="card-title-header white-text">Featured Item 3</div>
+              <div class="card-title-desc white-text">Description</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://responsify-ui.vercel.app/styles.css">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mock Ecomm App</title>
+</head>
+
+<body>
+    <nav class="nav-bar-top black-text">
+        <div class="nav-hamburger" id="navHamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-item-left">
+            <img src="assets/images/logo.png" alt="brand-logo" class="nav-item nav-brand-logo round-corner-md" />
+            <div class="nav-item">
+                <h2 class="brand-title regular-text">
+                    <a href="./index.html"> <span class="violet-text">Q</span>RTR </a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="nav-item-center">
+            <div class="input-with-status-icon nav-search-bar">
+                <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page" />
+                <a href="./product_page.html">
+                    <i class="fa fa-search input-status violet-text"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-item-right">
+            <a href="../login.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-sign-in medium-text violet-text"></i>
+                    <span class="medium-text">Log-<span class="violet-text">in</span></span>
+                </button>
+            </a>
+
+            <a href="../cart.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-shopping-cart medium-text violet-text"></i>
+                    <span class="medium-text">Cart</span>
+                </button>
+            </a>
+
+            <a href="../wishlist.html" class="btn btn-link">
+                <button class="btn btn-transparent">
+                    <i class="fa fa-heart medium-text violet-text"></i>
+                    <span class="medium-text">Wishlist</span>
+                </button>
+            </a>
+        </div>
+    </nav>
+    <aside class="side-nav page-side-nav">
+        <div class="input-with-status-icon nav-search-bar">
+            <input type="text" class="input border-2" placeholder="Search to go to Product Listing Page" />
+            <a href="./product_page.html">
+                <i class="fa fa-search input-status violet-text"></i>
+            </a>
+        </div>
+        <button class="btn btn-transparent">
+            <i class="fa fa-sign-in medium-text violet-text"></i>
+            <a href="../login.html" class="btn btn-link">
+                <span class="medium-text">Log-<span class="violet-text">in</span></span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-heart medium-text violet-text"></i>
+            <a href="../wishlist.html" class="btn btn-link">
+                <span class="medium-text">Wishlist</span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <a href="../cart.html" class="btn btn-link">
+                <i class="fa fa-shopping-cart medium-text violet-text"> </i>
+                <span class="medium-text">Go to <span class="violet-text">Cart</span></span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-home medium-text violet-text"></i>
+            <a href="./index.html" class="btn btn-link">
+                <span class="medium-text">Home</span>
+            </a>
+        </button><button class="btn btn-transparent">
+            <i class="fa fa-list medium-text violet-text"></i>
+            <a href="./product_page.html" class="btn btn-link">
+                <span class="medium-text">Product Page</span>
+            </a>
+        </button>
+        <button class="btn btn-transparent">
+            <i class="fa fa-list medium-text violet-text"></i>
+            <a href="./product_page.html" class="btn btn-link">
+                <span class="medium-text">Product Page</span>
+            </a>
+        </button>
+    </aside>
+    <main class="main-section landing-page">
+        <div class="page-width-80 flex-column-center width-100">
+            <section class="featured">
+                <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
+                    <div class="card-product-image">
+                        <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                    <div class="card-product-content">
+                        <div class="card-product-name">Item name</div>
+                        <div class="card-product-desc gray-text">with Goodies</div>
+                        <div class="card-price large-text">
+                            $100
+                            <span class="card-price-slashed gray-text">$150</span>
+                            <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-product-icons">
+                        <button class="btn btn-icon btn-transparent btn-buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy now
+                        </button>
+                        <button class="btn btn-icon btn-transparent btn-wish">
+                            <i class="fa fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
+                    <div class="card-product-image">
+                        <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                    <div class="card-product-content">
+                        <div class="card-product-name">Item name</div>
+                        <div class="card-product-desc gray-text">with Goodies</div>
+                        <div class="card-price large-text">
+                            $100
+                            <span class="card-price-slashed gray-text">$150</span>
+                            <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-product-icons">
+                        <button class="btn btn-icon btn-transparent btn-buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy now
+                        </button>
+                        <button class="btn btn-icon btn-transparent btn-wish">
+                            <i class="fa fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
+                    <div class="card-product-image">
+                        <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                    <div class="card-product-content">
+                        <div class="card-product-name">Item name</div>
+                        <div class="card-product-desc gray-text">with Goodies</div>
+                        <div class="card-price large-text">
+                            $100
+                            <span class="card-price-slashed gray-text">$150</span>
+                            <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-product-icons">
+                        <button class="btn btn-icon btn-transparent btn-buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy now
+                        </button>
+                        <button class="btn btn-icon btn-transparent btn-wish">
+                            <i class="fa fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
+                    <div class="card-product-image">
+                        <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                    <div class="card-product-content">
+                        <div class="card-product-name">Item name</div>
+                        <div class="card-product-desc gray-text">with Goodies</div>
+                        <div class="card-price large-text">
+                            $100
+                            <span class="card-price-slashed gray-text">$150</span>
+                            <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-product-icons">
+                        <button class="btn btn-icon btn-transparent btn-buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy now
+                        </button>
+                        <button class="btn btn-icon btn-transparent btn-wish">
+                            <i class="fa fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="card-basic card-ribbon card-ribbon-warning card-product border-2" badge-text="Only 2 left">
+                    <div class="card-product-image">
+                        <img src="https://picsum.photos/300/300" class="card-image" alt="card-image" />
+                        <i class="fa fa-heart-o card-heart"></i>
+                    </div>
+                    <div class="card-product-content">
+                        <div class="card-product-name">Item name</div>
+                        <div class="card-product-desc gray-text">with Goodies</div>
+                        <div class="card-price large-text">
+                            $100
+                            <span class="card-price-slashed gray-text">$150</span>
+                            <span class="card-rating">4 <i class="fa fa-star star-green"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-product-icons">
+                        <button class="btn btn-icon btn-transparent btn-buy">
+                            <i class="fa fa-shopping-cart"></i>
+                            Buy now
+                        </button>
+                        <button class="btn btn-icon btn-transparent btn-wish">
+                            <i class="fa fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/829cb68a23.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
