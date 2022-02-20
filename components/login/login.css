@@ -64,10 +64,9 @@
 
 .create-account {
   text-align: center;
-}
-
-.create-account i {
   padding-left: 10px;
+  justify-self: center;
+  width: fit-content;
 }
 
 .login-page label,
