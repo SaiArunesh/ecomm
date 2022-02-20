@@ -7,3 +7,7 @@ body {
   margin: 0 auto;
   border: 0;
 }
+
+.card-basic{
+  flex-wrap: wrap;
+}
