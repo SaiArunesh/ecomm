@@ -1,0 +1,63 @@
+.brand-title {
+  font-family: "Fredoka One", cursive;
+}
+
+.landing-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cta-image {
+  width: 100%;
+  max-height: 80vh;
+  aspect-ratio: 16 / 9;
+}
+
+.cta-image {
+  background-image: url(../../assets/images/landing-page-banner-background-sm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  color: var(--lynxwhite-color);
+  font-family: "Fredoka One", cursive;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-text-title {
+  display: block;
+  text-shadow: 0px 5px black;
+}
+
+.cta-text-desc {
+  display: inline-block;
+  max-width: 50%;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 0px 5px black;
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-add-cart {
+  text-decoration: none;
+}
+
+.btn-buy {
+  background-color: var(--info-color);
+  color: var(--lynxwhite-color);
+  padding: 1rem 2rem;
+}
+
+.featured > div {
+  cursor: pointer;
+}

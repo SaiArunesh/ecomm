@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%; /* 16px is assumed */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 0;
+}
